@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScratchFile FileVersion="3.0">
+  <FileVersion>3.0</FileVersion>
+  <Workspace>
+    <WorkspaceType>Single-project</WorkspaceType>
+    <WorkspacePath>C:\Users\toussaij\Documents\STM32dev\Disco_F746_FATFS_uSD_v1\</WorkspacePath>
+    <underRoot>true</underRoot>
+    <TrustZone>0</TrustZone>
+    <HAL_Driver>C:\Users\toussaij\STM32Cube\Repository\STM32Cube_FW_F7_V1.16.1\</HAL_Driver>
+    <CMSIS>Drivers/CMSIS</CMSIS>
+    <Toolchain>STM32CubeIDE</Toolchain>
+    <IocFile>Disco_F746_FATFS_uSD_v1.ioc</IocFile>
+    <Project>
+      <ProjectName>Disco_F746_FATFS_uSD_v1</ProjectName>
+      <ProjectNature>C</ProjectNature>
+      <Secure />
+      <filestoremove>
+        <file>
+          <name>Core\Src\stm32f7xx_hal_timebase_tim.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_adc.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_adc_ex.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc_ex.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dcmi.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dcmi_ex.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma2d.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_fmc.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_sdram.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_ltdc.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_ltdc_ex.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dsi.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_qspi.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rtc.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rtc_ex.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_sai.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_sai_ex.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_spdifrx.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_spi.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_spi_ex.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_hcd.c</name>
+        </file>
+        <file>
+          <name>Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_usb.c</name>
+        </file>
+      </filestoremove>
+      <sourceEntriesToRemove>
+        <sourceEntry />
+      </sourceEntriesToRemove>
+      <configs>
+        <config>
+          <name>Disco_F746_FATFS_uSD_v1</name>
+          <mainSourceRepo>Core</mainSourceRepo>
+          <sourceStructure>Advanced</sourceStructure>
+          <device>STM32F746NGHx</device>
+          <cpucore>Arm Cortex-M7</cpucore>
+          <fpu>SP</fpu>
+          <memories>
+            <memory access="xrw" name="RAM" size="320" start="0x20000000" />
+            <memory access="rx" name="FLASH" size="1024" start="0x8000000" />
+          </memories>
+          <startup>C:\Users\toussaij\STM32Cube\Repository\STM32Cube_FW_F7_V1.16.1\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f746xx.s</startup>
+          <LinkSettings>
+            <icfloc />
+            <LinkAdditionalLibs />
+          </LinkSettings>
+          <heapSize>0x200</heapSize>
+          <stackSize>0x1000</stackSize>
+          <board>STM32F746G-DISCO</board>
+          <debugprobe />
+          <optimization />
+          <Aincludes>
+            <include />
+          </Aincludes>
+          <Adefines />
+          <Cdefines>
+            <define>USE_HAL_DRIVER</define>
+            <define>STM32F746xx</define>
+          </Cdefines>
+          <Ldefines />
+          <Cincludes>
+            <include>Core\Inc</include>
+            <include>Drivers\STM32F7xx_HAL_Driver\Inc</include>
+            <include>Drivers\STM32F7xx_HAL_Driver\Inc\Legacy</include>
+            <include>Middlewares\Third_Party\FreeRTOS\Source\include</include>
+            <include>Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS</include>
+            <include>Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1</include>
+            <include>Drivers\CMSIS\Device\ST\STM32F7xx\Include</include>
+            <include>Drivers\CMSIS\Include</include>
+          </Cincludes>
+          <definestoremove>
+            <Adefines />
+            <Cdefines>
+              <define>USE_FULL_LL_DRIVER</define>
+              <define>MBEDTLS_CONFIG_FILE="mbedtls_config.h"</define>
+              <define>USE_FULL_ASSERT=1U</define>
+            </Cdefines>
+            <Ldefines />
+          </definestoremove>
+          <inctoremove>
+            <Aincludes>
+              <include />
+            </Aincludes>
+            <Cincludes />
+          </inctoremove>
+        </config>
+      </configs>
+      <copyAsReference>false</copyAsReference>
+      <sourceEntries>
+        <sourceEntry>
+          <name>Core</name>
+        </sourceEntry>
+        <sourceEntry>
+          <name>Drivers</name>
+        </sourceEntry>
+        <sourceEntry>
+          <name>Middlewares</name>
+        </sourceEntry>
+      </sourceEntries>
+      <Groups />
+    </Project>
+  </Workspace>
+</ScratchFile>
+
