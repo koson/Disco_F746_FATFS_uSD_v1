@@ -365,11 +365,11 @@ void StartThread(void const * argument)
 	    }
 	    /*##-3- Create a FAT file system (format) on the logical drive #########*/
 	    /* WARNING: Formatting the uSD card will delete all content on the device */
-//	    if(f_mkfs((TCHAR const*)SDPath, FM_ANY, 0, workBuffer, sizeof(workBuffer)) != FR_OK)
-//	      {
-//	        /* FatFs Format Error */
-//	        Error_Handler();
-//	      }
+	    if(f_mkfs((TCHAR const*)SDPath, FM_ANY, 0, workBuffer, sizeof(workBuffer)) != FR_OK)
+	      {
+	        /* FatFs Format Error */
+	        Error_Handler();
+	      }
 	     /*##-4- Create and Open a new text file object with write access #####*/
 	     if(f_open(&MyFile, "STM32.TXT", FA_CREATE_ALWAYS | FA_WRITE | FA_OPEN_APPEND) != FR_OK)
 	       {
