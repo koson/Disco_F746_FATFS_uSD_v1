@@ -1,0 +1,22 @@
+@startuml
+
+start
+
+: BSP_LED_Off(LED1);
+
+if(FATFS_LinkDriver(&SD_Driver, SDPath) == 0) then (yes)
+    :f_mount(&SDFatFs, (TCHAR const*)SDPath, 0);
+    :f_mkfs((TCHAR const*)SDPath, FM_ANY, 0, workBuffer, sizeof(workBuffer));
+    :f_open(&MyFile, "STM32.TXT", FA_CREATE_ALWAYS | FA_WRITE | FA_OPEN_APPEND);
+    :f_write(&MyFile, wtext, sizeof(wtext), (void *)&byteswritten);
+    :f_close(&MyFile);
+    :f_open(&MyFile, "STM32.TXT", FA_READ);
+    :f_read(&MyFile, rtext, sizeof(rtext), (UINT*)&bytesread);
+	:f_close(&MyFile);
+	:BSP_LED_On(LED1);
+	:FATFS_UnLinkDriver(SDPath);
+endif 
+stop
+
+
+@enduml 
